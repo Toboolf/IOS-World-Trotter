@@ -13,6 +13,10 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet var celciusLabel: UILabel!
   @IBOutlet var textField: UITextField!
   
+  let backgroundColors =
+    [UIColor.black, UIColor.darkGray, UIColor.systemIndigo, UIColor.brown, UIColor.systemPurple, UIColor.systemGray6]
+  var currentBackgroundIndex = 0
+  
   let numberFormatter: NumberFormatter = {
     let nf = NumberFormatter()
     nf.numberStyle = .decimal
@@ -25,6 +29,12 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     super.viewDidLoad()
     print("Convertion controller :3")
     updateCelsiusLabel()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    view.backgroundColor =
+      backgroundColors[currentBackgroundIndex]
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundColors.count
   }
   
   var farenheitValue: Measurement<UnitTemperature>? {

@@ -54,6 +54,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cns-Zu-yDn" firstAttribute="centerX" secondItem="J6C-r7-ddC" secondAttribute="centerX" id="5n9-vh-cWM"/>
                             <constraint firstItem="aDk-26-f1I" firstAttribute="centerX" secondItem="J6C-r7-ddC" secondAttribute="centerX" id="Lyn-hd-LjN"/>
@@ -67,12 +68,21 @@
                             <constraint firstItem="R9r-lk-NZl" firstAttribute="centerX" secondItem="J6C-r7-ddC" secondAttribute="centerX" id="xyF-c9-TCW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ipm-TY-B0h" appends="YES" id="oJE-Ct-HeQ"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celciusLabel" destination="aDk-26-f1I" id="yoj-qM-yTs"/>
+                        <outlet property="textField" destination="J6C-r7-ddC" id="dtk-R7-6Ey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ipm-TY-B0h">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="ug8-p8-B6c"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="121.875"/>
         </scene>

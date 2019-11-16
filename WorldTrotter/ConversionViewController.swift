@@ -13,6 +13,11 @@ class ConversionViewController: UIViewController {
   @IBOutlet var celciusLabel: UILabel!
   @IBOutlet var textField: UITextField!
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    updateCelsiusLabel()
+  }
+  
   var farenheitValue: Measurement<UnitTemperature>? {
     didSet {
       updateCelsiusLabel()

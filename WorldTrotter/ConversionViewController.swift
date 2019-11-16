@@ -13,6 +13,14 @@ class ConversionViewController: UIViewController {
   @IBOutlet var celciusLabel: UILabel!
   @IBOutlet var textField: UITextField!
   
+  let numberFormatter: NumberFormatter = {
+    let nf = NumberFormatter()
+    nf.numberStyle = .decimal
+    nf.minimumFractionDigits = 0
+    nf.maximumFractionDigits = 1
+    return nf
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     updateCelsiusLabel()
@@ -32,7 +40,8 @@ class ConversionViewController: UIViewController {
   
   func updateCelsiusLabel() {
     if let celsiusValue = celsiusValue {
-      celciusLabel.text = "\(celsiusValue.value)"
+      celciusLabel.text =
+        numberFormatter.string(from: NSNumber(value: celsiusValue.value))
     } else {
       celciusLabel.text = "???"
     }

@@ -13,11 +13,31 @@ class ConversionViewController: UIViewController {
   @IBOutlet var celciusLabel: UILabel!
   @IBOutlet var textField: UITextField!
   
-  @IBAction func farenheitFieldEditingChanged(_ textField: UITextField) {
-    if let text = textField.text, !text.isEmpty {
-      celciusLabel.text = text
+  var farenheitValue: Measurement<UnitTemperature>? {
+    didSet {
+      updateCelsiusLabel()
+    }
+  }
+  
+  var celsiusValue: Measurement<UnitTemperature>? {
+    if let farenheitValue = farenheitValue {
+      return farenheitValue.converted(to: .celsius)
+    } else { return nil }
+  }
+  
+  func updateCelsiusLabel() {
+    if let celsiusValue = celsiusValue {
+      celciusLabel.text = "\(celsiusValue.value)"
     } else {
       celciusLabel.text = "???"
+    }
+  }
+  
+  @IBAction func farenheitFieldEditingChanged(_ textField: UITextField) {
+    if let text = textField.text, let value = Double(text) {
+      farenheitValue = Measurement(value: value, unit: .fahrenheit)
+    } else {
+      farenheitValue = nil
     }
   }
   

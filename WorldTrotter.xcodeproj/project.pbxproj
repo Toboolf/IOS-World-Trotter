@@ -15,6 +15,7 @@
 		935B4F9323773319004B06C7 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B4F9223773319004B06C7 /* WorldTrotterTests.swift */; };
 		935B4F9E23773319004B06C7 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B4F9D23773319004B06C7 /* WorldTrotterUITests.swift */; };
 		936E8CA023804D270056B30B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E8C9F23804D270056B30B /* ConversionViewController.swift */; };
+		936E8CA32380787B0056B30B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936E8CA22380787B0056B30B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		935B4F9D23773319004B06C7 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		935B4F9F23773319004B06C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936E8C9F23804D270056B30B /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		936E8CA22380787B0056B30B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936E8CA32380787B0056B30B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				935B4F9123773319004B06C7 /* WorldTrotterTests */,
 				935B4F9C23773319004B06C7 /* WorldTrotterUITests */,
 				935B4F7923773315004B06C7 /* Products */,
+				936E8CA12380787A0056B30B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				935B4F9F23773319004B06C7 /* Info.plist */,
 			);
 			path = WorldTrotterUITests;
+			sourceTree = "<group>";
+		};
+		936E8CA12380787A0056B30B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936E8CA22380787B0056B30B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

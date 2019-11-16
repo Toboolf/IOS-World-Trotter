@@ -16,6 +16,7 @@
 		935B4F9E23773319004B06C7 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935B4F9D23773319004B06C7 /* WorldTrotterUITests.swift */; };
 		936E8CA023804D270056B30B /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E8C9F23804D270056B30B /* ConversionViewController.swift */; };
 		936E8CA32380787B0056B30B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936E8CA22380787B0056B30B /* MapKit.framework */; };
+		936E8CA5238081790056B30B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936E8CA4238081790056B30B /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		935B4F9F23773319004B06C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936E8C9F23804D270056B30B /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		936E8CA22380787B0056B30B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		936E8CA4238081790056B30B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				935B4F8623773319004B06C7 /* LaunchScreen.storyboard */,
 				935B4F8923773319004B06C7 /* Info.plist */,
 				936E8C9F23804D270056B30B /* ConversionViewController.swift */,
+				936E8CA4238081790056B30B /* MapViewController.swift */,
 			);
 			path = WorldTrotter;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				935B4F7C23773315004B06C7 /* AppDelegate.swift in Sources */,
 				936E8CA023804D270056B30B /* ConversionViewController.swift in Sources */,
 				935B4F7E23773315004B06C7 /* SceneDelegate.swift in Sources */,
+				936E8CA5238081790056B30B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

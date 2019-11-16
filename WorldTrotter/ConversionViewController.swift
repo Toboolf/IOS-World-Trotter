@@ -10,6 +10,10 @@ import UIKit
 
 class ConversionViewController: UIViewController {
   
+  @IBOutlet var celciusLabel: UILabel!
   
+  @IBAction func farenheitFieldEditingChanged(_ textField: UITextField) {
+    celciusLabel.text = textField.text
+  }
   
 }

@@ -30,9 +30,9 @@ class MapViewController: UIViewController {
     segmentedControl.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(segmentedControl)
     
-    let topAnchor = segmentedControl.topAnchor.constraint(equalTo: view.topAnchor)
-    let leadingAnchor = segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-    let trailingAnchor = segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+    let topAnchor = segmentedControl.topAnchor.constraint(equalTo: view.topAnchor, constant: 40)
+    let leadingAnchor = segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8)
+    let trailingAnchor = segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
     
     topAnchor.isActive = true
     leadingAnchor.isActive = true
